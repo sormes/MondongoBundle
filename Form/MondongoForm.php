@@ -53,7 +53,7 @@ class MondongoForm extends Form
             // if the property "data" is NULL, getTransformedData() returns an empty
             // string
             if (!empty($data) && $field->getPropertyPath() !== null) {
-                $field->updateFromObject($data);
+                $field->updateFromProperty($data);
             }
         }
 
